@@ -1,0 +1,54 @@
+<body style="background-color: thistle;">
+    
+<h3>Update Task</h3>
+
+
+<form (ngSubmit)="onsubmit()">
+    <div class ="form-group">
+        <label for="name">Task owner ID</label>
+        <input type="text" class="form-control" id="ownerid" required [(ngModel)]="product.ownerId" placeholder="Enter the Task OwnerId !!!" name="desc" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task name</label>
+        <input type="text" class="form-control" id="PName" required [(ngModel)]="product.name" placeholder="Enter Task name Here!!!" name="name" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task description</label>
+        <input type="text" class="form-control" id="desc1" required [(ngModel)]="product.description" placeholder="Enter the Task Description !!!" name="desc1" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task status</label>
+        <input type="text" class="form-control" id="status" required [(ngModel)]="product.status" placeholder="Enter the Task status !!!" name="status" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task priority</label>
+        <select type="text" class="form-control" id="desc2" required [(ngModel)]="product.priority"  name="desc2">
+        <option value='high'>!!High!!</option>
+        <option value='medium'>!!Medium!!</option>
+        <option value='low'>!!Low!!</option>
+        </select>
+   
+    </div>
+    <div class ="form-group">
+        <label for="name">Task notes</label>
+        <input type="text" class="form-control" id="desc3" required [(ngModel)]="product.notes" placeholder="Enter the Task Notes !!!" name="desc3" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task BookMarked</label>
+        <input type="text" class="form-control" id="desc4" required [(ngModel)]="product.isBookmarked" placeholder="Enter the Task Bookmarked status !!!" name="desc4" />
+    </div>
+    <!-- <div class ="form-group">
+        <label for="name">Task createdOn</label>
+        <input type="text" class="form-control" id="desc" required [(ngModel)]="product.createdOn" placeholder="Enter the Task created date !!!" name="desc" />
+    </div> -->
+    <div class ="form-group">
+        <label for="name">Task statuschangedon</label>
+        <input type="datetime-local" class="form-control" id="desc5" required [(ngModel)]="product.statusChangedOn" placeholder="Enter the Task status changedon !!!" name="desc5" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Update</button>
+</form>
+
+
+</body>
+

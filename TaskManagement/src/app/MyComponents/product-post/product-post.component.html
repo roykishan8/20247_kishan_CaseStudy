@@ -1,0 +1,73 @@
+<!-- <div>
+    <br>
+    <h1>Product Post</h1>
+</div>
+<div>
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+        ID: <input type="text" name="t1" ngModel />
+        Name: <input type="text" name="t2" ngModel/>
+        Price: <input type="text" name="t3" ngModel/>
+        <input type="submit" value="Post"/>
+    </form>
+    <br>
+
+    <div>productID: {{id}}</div><br>
+    <div>productName: {{name}}</div><br>
+    <div>productPrice: {{price}}</div>
+</div> -->
+<body style="background-color: thistle;">
+<h3> Creating Task</h3>
+<div [hidden]="submitted" style="width: 400px;">
+<form (ngSubmit)="onSubmit()">
+    <div class ="form-group">
+        <label for="name">Task ID</label>
+        <input type="text" class="form-control" id="PID" required [(ngModel)]="product.taskId" placeholder="ENTER Task ID HERE !!!" name="id" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task owner ID</label>
+        <input type="text" class="form-control" id="ownerid" required [(ngModel)]="product.ownerId" placeholder="Enter the Task OwnerId !!!" name="desc" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task name</label>
+        <input type="text" class="form-control" id="PName" required [(ngModel)]="product.name" placeholder="Enter Task name Here!!!" name="name" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task description</label>
+        <input type="text" class="form-control" id="desc" required [(ngModel)]="product.description" placeholder="Enter the Task Description !!!" name="desc" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task status</label>
+        <input type="text" class="form-control" id="status" required [(ngModel)]="product.status" placeholder="Enter the Task status !!!" name="status" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task priority</label>
+        <select type="text" class="form-control" id="desc2" required [(ngModel)]="product.priority"  name="desc2">
+        <option value='high'>!!High!!</option>
+        <option value='medium'>!!Medium!!</option>
+        <option value='low'>!!Low!!</option>
+        </select>
+   
+    </div>
+    <div class ="form-group">
+        <label for="name">Task notes</label>
+        <input type="text" class="form-control" id="desc" required [(ngModel)]="product.notes" placeholder="Enter the Task Notes !!!" name="desc" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task BookMarked</label>
+        <input type="text" class="form-control" id="desc" required [(ngModel)]="product.isBookmarked" placeholder="Enter the Task Bookmarked status !!!" name="desc" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task createdOn</label>
+        <input type="date" class="form-control" id="desc" required [(ngModel)]="product.createdOn" placeholder="Enter the Task created date !!!" name="desc" />
+    </div>
+    <div class ="form-group">
+        <label for="name">Task statuschangedon</label>
+        <input type="datetime-local" class="form-control" id="desc" required [(ngModel)]="product.statusChangedOn" placeholder="Enter the Task status changedon !!!" name="desc" />
+    </div>
+    <br>
+    <button type="submit" class="btn btn-info">Submit</button>
+
+
+</form>
+</div>
+</body>

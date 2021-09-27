@@ -1,0 +1,38 @@
+<!-- <body style="background-color:powderblue;"> -->
+  
+    <div>
+        <!-- <input type="text" ng-model="SearchTask" placeholder="SearchTask"> -->
+        <input class="form-control" id="myInput" type="text"  placeholder="SearchUser" [(ngModel)]="searchText"> 
+      <body style="background-color:powderblue;">
+  <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th scope="col">User Id</th>
+          <th scope="col">UserName</th>
+          <th >Email</th>
+          <th scope="col">Role</th>
+          <th scope="col">DOB</th>
+          <th scope="col">Is active</th>
+          
+  
+        </tr>
+      </thead>
+      <tbody id="test">
+        <tr *ngFor="let pro of user1 | async | filter:searchText"> 
+          
+          <td>{{pro.userId}}</td>
+          <td>{{pro.username}}</td>
+          <td>{{pro.email}}</td>
+          <td>{{pro.role}}</td>
+          <td>{{pro.dob}}</td>
+          <td>{{pro.active}}</td>
+         
+        </tr>
+      </tbody>
+    </table>
+    </body>
+    </div>
+    
+     
+    <!-- </body> -->
+  

@@ -1,0 +1,47 @@
+<!-- <body style="background-color:powderblue;"> -->
+  
+    <div>
+      <input class="form-control" id="myInput" type="text"  placeholder="SearchTask" [(ngModel)]="searchText"> 
+      
+    <body style="background-color:powderblue;">
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+      <tr>
+        <th scope="col">TaskID</th>
+        <th scope="col">Ownerid</th>
+        <th >Name</th>
+        <th scope="col">Desc</th>
+        <th scope="col">status</th>
+        <th scope="col">priority</th>
+        <th scope="col">notes</th>
+        <th scope="col">bookmarked</th>
+        <th scope="col">createdon</th>
+        <th scope="col">statuschangedon</th>
+
+      </tr>
+    </thead>
+    <tbody id="test">
+      <tr *ngFor="let pro of product | async | filter:searchText"> 
+        
+        <td>{{pro.taskId}}</td>
+        <td>{{pro.ownerId}}</td>
+        <td>{{pro.name}}</td>
+        <td>{{pro.description}}</td>
+        <td>{{pro.status}}</td>
+        <td>{{pro.priority}}</td>
+        <td>{{pro.notes}}</td>
+        <td>{{pro.isBookmarked}}</td>
+        <td>{{pro.createdOn}}</td>
+        <td>{{pro.statusChangedOn}}</td>
+        <td>
+            <button (click)= "deleteProduct(pro.taskId)" class="btn btn-sm btn-danger" style="margin-left:10px;">delete</button>
+            <button (click)= "updateProduct(pro.taskId)" class="btn btn-info" style="margin-left:10px;">update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </body>
+  </div>
+  
+   
+  <!-- </body> -->

@@ -1,0 +1,48 @@
+<body style="background-color: thistle;">
+    
+    <h3>SignUp Form</h3>
+    
+    
+    <form (ngSubmit)="onsubmit()">
+        <div class ="form-group">
+            <label for="name">User Id</label>
+            <input type="text" class="form-control" id="ownerid" required [(ngModel)]="product.userId" placeholder="Enter the UserId of your choice 5 digit !!!" name="desc" />
+        </div>
+        <div class ="form-group">
+            <label for="name">User name</label>
+            <input type="text" class="form-control" id="PName" required [(ngModel)]="product.username" placeholder="Enter user name Here!!!" name="name" />
+        </div>
+        <div class ="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="PName1" required [(ngModel)]="product.email" placeholder="Enter Email" name="name1" />
+        </div>
+        <div class ="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="text" class="form-control" id="PName2" required [(ngModel)]="product.contactNumber" placeholder="Enter contact number!!!" name="name2" />
+        </div>
+        <div class ="form-group">
+            <label for="dob">DOB</label>
+            <input type="date" class="form-control" id="PName3" required [(ngModel)]="product.dob" placeholder="Enter dob Here!!!" name="name3" />
+        </div>
+        <div class ="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="PName4" required [(ngModel)]="product.password" placeholder="Enter your password Here!!!" name="name4" />
+        </div>
+        
+
+       
+        
+        
+        <!-- <div class ="form-group">
+            <label for="name">Task createdOn</label>
+            <input type="text" class="form-control" id="desc" required [(ngModel)]="product.createdOn" placeholder="Enter the Task created date !!!" name="desc" />
+        </div> -->
+        
+    
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    
+    
+    </body>
+    
+    

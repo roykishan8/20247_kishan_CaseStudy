@@ -1,0 +1,102 @@
+
+<div>
+  
+ 
+  <!-- <h1>hi!!!!!!!!!</h1>
+  <my-com1></my-com1>
+  <my-own-com></my-own-com>
+  <app-employee-service></app-employee-service>
+  <app-product-list></app-product-list>
+  <my-form></my-form>
+  <app-product-post></app-product-post>
+  <validate></validate>
+  <f-com></f-com>
+  <ul>
+    <li><a [routerLink] = "['/TemplateForm']">TemplateForm</a></li>
+    <li><a [routerLink] = "['/ModelForm']">ModelForm</a></li>
+  </ul>
+
+  <div>
+    <h1>PRODUCT CRUD OPERATION</h1>
+    <h2>Options Provided: </h2>
+    <ul>
+      <li><a [routerLink] = "['/ShowProducts']">SHOW PRODUCTS</a></li>
+      <li><a [routerLink] = "['/AddProducts']">POST PRODUCTS</a></li>
+    </ul>
+  </div> -->
+  <!-- <span class="border"></span>  -->
+  <!-- <div class="bg-success p-2" style="--bs-bg-opacity: .3;"> -->
+  <!-- <ul class="navbar-nav"> 
+    <li class="nav-item">
+      <a routerLink="products" class="nav-link" routerLinkActive="active">Task List</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="save" class="nav-link" routerLinkActive="active">Add Task</a>
+    </li>
+
+  </ul> -->
+  
+  <div class="bg-success p-2"  style="--bs-bg-opacity: .5;">
+    <img src="././assets/task.png" alt="..." class="img-thumbnail"> 
+    <img src="././assets/task.png" alt="..." class="img-thumbnail"> 
+     <img src="././assets/task.png" alt="..." class="img-thumbnail"> 
+     
+    <nav class="navbar navbar-expand-lg navbar-light bg-grey">
+      
+      <a *ngIf="loginService.isUserLoggedIn()" class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a *ngIf="loginServicetest.isUserLoggedIn()" class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" text-white id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a *ngIf="loginService.isUserLoggedIn()" routerLink="tasks" class="nav-link" routerLinkActive="active">Task List</a>
+          </li>
+          <li class="nav-item">
+            <a *ngIf="loginServicetest.isUserLoggedIn()" routerLink="tasks1" class="nav-link" routerLinkActive="active">Task List</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a *ngIf="loginService.isUserLoggedIn()" routerLink="save" class="nav-link" routerLinkActive="active">ADD Task</a>
+          </li>
+         
+          <li class="nav-item">
+            <a *ngIf="loginService.isUserLoggedIn()"  routerLink="user" class="nav-link" routerLinkActive="active">user list</a>
+          </li>
+          <li class="nav-item">
+            <a *ngIf="loginServicetest.isUserLoggedIn()"  routerLink="user1" class="nav-link" routerLinkActive="active">user list</a>
+          </li>
+          <li class="nav-item">
+            <a *ngIf="loginService.isUserLoggedIn()"  routerLink="saveuser" class="nav-link" routerLinkActive="active">Add User</a>
+          </li>
+          <li class="nav-item">
+            <a *ngIf="loginService.isUserLoggedIn()"  routerLink="logout" class="nav-link" routerLinkActive="active">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a *ngIf="loginServicetest.isUserLoggedIn()"  routerLink="logout1" class="nav-link" routerLinkActive="active">Logout</a>
+          </li>
+          
+          <li class="nav-item">
+            <a *ngIf="!loginServicetest.isUserLoggedIn() && !loginService.isUserLoggedIn()"  routerLink="login" class="nav-link" routerLinkActive="active">Login Admin</a>
+          </li>
+          <li class="nav-item">
+            <a *ngIf="!loginService.isUserLoggedIn() && !loginServicetest.isUserLoggedIn()"  routerLink="loginemp" class="nav-link" routerLinkActive="active">Login Emp</a>
+          </li>
+          
+        </ul>
+        
+        
+      </div>
+    </nav>
+  </div>
+  <!-- </div> -->
+  <router-outlet></router-outlet>
+  
+
+</div>
